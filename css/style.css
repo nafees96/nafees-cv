@@ -1073,43 +1073,7 @@ header .intro-text {
 	margin-bottom: 30px;
 	line-height: 22px;
 }
-//////////////////////////////* Portfolio Section *///////////////////////////
-#portfolio {
-	padding: 120px 0;
-	background: #f6f6f6;
-}
-.categories {
-	padding-bottom: 30px;
-	text-align: center;
-} 
-ul.cat li {
-	display: inline-block;
-}
-ol.type li {
-	display: inline-block;
-	margin-left: 20px;
-}
-ol.type li a {
-	border: 1px solid #777;
-	color: #555;
-	padding: 8px 20px;
-}
-ol.type li a.active {
-	background: #222;
-	border: 1px solid #222;
-	color: #fff;
-}
-ol.type li a:hover {
-	background: #222;
-	border: 1px solid #222;
-	color: #fff;
-}
 
-#portfolio i.fa {
-	font-size: 20px;
-	padding: 5px;
-	color: #E87E04;
-}
 //////////////////////////* Contact Section *////////////////////////////
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,900);
 body {
@@ -1224,3 +1188,6 @@ position:relative;
             -o-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
         }
+
+
+        
