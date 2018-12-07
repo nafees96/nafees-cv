@@ -1,3 +1,4 @@
+
 /* body styling */
 body {
   background: url(images/pexels-photo-872958.jpeg);
@@ -20,7 +21,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
 }
 
 li a {
@@ -182,7 +182,7 @@ overflow:auto;
   padding: 15px;
 }
 
-//////////////////////////* Contact Section *////////////////////////////
+/* Contact Section */
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,900);
 body {
 	font-family: Poppins;
