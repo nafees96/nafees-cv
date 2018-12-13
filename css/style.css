@@ -1,185 +1,264 @@
-
-/* body styling */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+ 
 body {
-  background: url(images/pexels-photo-872958.jpeg);
-color: white;
-  background-size: cover;
-  background-attachment: fixed;
-padding: 15px;
-color: black;
-font-family: 'Notable', sans-serif;
-}
-/* scroll behavior */
-html {
-scroll-behavior: smooth;
+  font: 100% sans-serif;
+  margin: 0em;
+  background-color: #fff;
+  color: #666;
 }
 
-/* nav bar styling */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+a {
+  color: #3d6dbe;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: grey;
-}
-
-.active {
-  background-color: white;
-  
-}
-
-
-#header {
-  position: sticky;
-  top: 23px;
-  z-index: 10;
-  /* google font */
-  font-family: 'Notable', sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: rgba(46, 61, 66, 0.70);
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color:white;
-  padding: 14px 16px;
-  font-size: 25px;
-}
-
-.topnav a:hover {
-  background-color: grey;
-  color: black;
-}
-
-.name {
-  margin-right: -100%;
-  margin-top: -42px;
-}
-
-.image_align{
-  margin-right: -44%;
-    margin-left: 57%;
-}
-
-.about_align{
-  margin-left: 76%;
-    margin-right: -27%;
-}
-
-.about_meAlign{
-  margin-left: -141px;
-    margin-right: -143px;
-}
-.active {
-  background-color: black;
-  color: white;
-  font-size: 22px;
-  margin-left: 48px;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-h2 {
-    font-size: 40px;
-    font-family: 'Viga', sans-serif;
-}
-
-h1 {
-  font-size: 40px;
-  font-family: 'Viga', sans-serif;
-}
-
-h4 {
-  font-size: 30px;
-  font-family: 'Viga', sans-serif;
-}
-
-.info {
-   font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.fab {
-font-size: 70px;
-padding: 20px;
-color: rgb(19, 15, 15);
-}
-.fas {
-font-size: 70px;
-padding: 20px;
-color: white;
+a:focus,
+a:hover {
+  color: #6594e0;
 }
 
 p {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1.8;
+  margin-top: 0em;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
+img {
+  max-width: 100%;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+header {
+  background-color: #999;
+  background-image: url("../img/old\ school\ taken\ by\ Nafees.JPG");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 4em;
+  text-align: center;
+  height: 500px;
+ 
+}
+
+header h1 {
+  color: white;
+  font-size: 2em;
+  margin: 0;
+  letter-spacing: 1px;
+  opacity: 1;
+  text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
+  position: relative;
+  top: 370px;
+  font-weight: 700;
+}
+
+header p {
+  color: #fff;
+  font-size: 1.1em;
+  padding-bottom: 1.3em;
+  padding-top: .5em;
+  opacity: .9;
+  position: relative;
+  top: 360px;
+}
+
+section h1 {
+  font-size: 1.8em;
+  line-height: 1em;
+  margin-bottom: .6em;
+}
+
+/* Same font-size and line-height as p element */
+section ul li, section ol li {
+  font-size: 1em;
+  margin-left: -10px;
+  line-height: 1.8;
+}
+
+footer {
+  margin-bottom: 1em;
+  color: #888;
+}
+
+footer hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+@media screen and (min-width: 50em) {
+  header {
+    height: 700px;
+  }
+  
+  header h1 {
+    font-size: 3.2em;
+    top: 540px;
+  }
+  
+  header p {
+    top: 530px;
+    font-size: 1.5em;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+
+/* ------------------- Grid -------------------*/
+
+.container {
+  max-width: 50em;
+  width:92%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left:  -1%;
+  
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ */
+.row {
+  *zoom: 1;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 49.333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
+}
+
+/* -------------------Custom Blocks----------------- */
+
+
+/* Education Block */
+.education {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 40em) {
+  .education {
+    width: 70%;
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
+}
+
+
+/* Testimonials */
+.testimonial {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial img {
+  height: 4em;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 40px;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #888;
+  margin-top:  -15px;
+}
+
+/* start of photography section */
+
+.container_3{
+  margin:auto;
+  width: 100%;
+  
+}
+
+.title_section_2 {
+  line-height: 1.2em;
+  margin-bottom: 24px;
+  
+}
+
+.size_2{
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+#photographyGrid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 102%;
+  grid-gap: 54px;
+  }
+
+  
+
+.crafted {width: 100%;
+}
+
+/* end of Photography */
+@media screen and (min-width: 40em) {
+  .container_3 {
+    padding: 6em;
     text-align: left;
   }
-}
+  
 
-@media screen and (min-width: 900px){
-    .content{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 79px;
-        
-    }
-
-    .fab {
-      font-size: 50px;
-      padding: 20px;
-      color: black;
-    }
-    .fas {
-      font-size: 50px;
-      padding: 20px;
-      color: black;
-    }
-}
-#about {
-margin:0px auto 50px auto;
-background-color: rgba(13, 67, 85, 0.308);
-overflow:auto;
-  padding-bottom:100px;
-  padding: 15px;
+.educationList{
+  margin-left: -22px;
 }
 
 /* Contact Section */
@@ -300,6 +379,3 @@ line-height: 3em;
             -o-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
         }
-
-
-
